@@ -48,3 +48,5 @@ If you are willing to contibute to this project, you are warmly welcome.
 Do check the [Contribution](https://github.com/Clueless-Community/Prega/blob/master/CONTRIBUTING.md) guidelines before contributing.
 
 #### Take a moment to star ⭐ the project if you like it 😊
+
+Do checkout the other repos 💫
