@@ -26,7 +26,7 @@
 
 
  
-During the time of pregnany moms need to take care of her and also a lot of documents like - prescriptions, reports and they also need to remember a lot of things like medicine updates, allergies (they might have), things what to do and what not do. And it becomes a lot hectic. 
+During the time of pregnancy moms need to take care of her and also a lot of documents like - prescriptions, reports and they also need to remember a lot of things like medicine updates, allergies (they might have), things what to do and what not do. And it becomes a lot hectic. 
 
 Also for every doctor visit they need to take a lot of previous reports, prescriptions and all other stuff. And there is no easy way of sharing them with doctor.
 
