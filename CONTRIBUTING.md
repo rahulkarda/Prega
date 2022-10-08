@@ -30,6 +30,27 @@ cd prega
 
 ## 2. Get all the required dependencies
 
+Run the command to generate the Asset file to run the app in your local system
+
+```
+flutter packages pub run build_runner build --delete-conflicting-outputs
+```
+
+example use:
+```
+Assets.icons.icon.image(height: 45),
+```
+in place of :
+```
+ Image.asset(
+             'assets/icons/icon.png',
+             height: 45,
+             width: 45,
+           ),
+```
+
+## 3. Generate all assets code
+
 Run the command to get all the required dependencies to run the app in your local system
 
 ```
