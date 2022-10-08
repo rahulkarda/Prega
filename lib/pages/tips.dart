@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:prega/utils/size_config.dart';
 import 'package:prega/widgets/heading.dart';
 import 'package:http/http.dart' as http;
 
@@ -46,8 +47,8 @@ class _TipsState extends State<Tips> {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            const SizedBox(
-              height: 55,
+            SizedBox(
+              height: 55.toHeight,
             ),
             Heading(title: "Tips"),
             const SizedBox(
