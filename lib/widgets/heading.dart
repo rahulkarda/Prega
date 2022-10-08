@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prega/gen/assets.gen.dart';
 
 class Heading extends StatelessWidget {
   final title;
@@ -13,11 +14,7 @@ class Heading extends StatelessWidget {
           const SizedBox(
             width: 15,
           ),
-          Image.asset(
-            'assets/icons/icon.png',
-            height: 45,
-            width: 45,
-          ),
+          Assets.icons.icon.image(height: 45),
           const SizedBox(
             width: 15,
           ),
