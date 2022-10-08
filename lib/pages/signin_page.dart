@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:prega/colors.dart';
 import 'package:prega/provider/google_signin.dart';
 import 'package:provider/provider.dart';
 
@@ -27,8 +28,9 @@ class SignIn extends StatelessWidget {
                 provider.googleLogin();
               },
               style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color.fromARGB(255, 47, 46, 65),
-                  fixedSize: const Size(240, 46)),
+                primary: buttonColor,
+                fixedSize: const Size(double.infinity, 46),
+              ),
               label: const Text(
                 "Login",
                 style: TextStyle(fontSize: 18),

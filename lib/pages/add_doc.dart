@@ -10,6 +10,7 @@ import 'package:intl/intl.dart';
 
 // ignore: depend_on_referenced_packages
 import 'package:path/path.dart';
+import 'package:prega/colors.dart';
 import 'package:prega/widgets/heading.dart';
 
 class AddDoc extends StatefulWidget {
@@ -207,9 +208,9 @@ class _AddDocState extends State<AddDoc> {
                               icon: const FaIcon(FontAwesomeIcons.file),
                               label: const Text('Open File'),
                               style: ElevatedButton.styleFrom(
-                                  backgroundColor:
-                                      const Color.fromARGB(255, 47, 46, 65),
-                                  fixedSize: const Size(double.infinity, 46)),
+                                primary: buttonColor,
+                                fixedSize: const Size(double.infinity, 46),
+                              ),
                             ),
                           ),
                           const SizedBox(
@@ -306,9 +307,9 @@ class _AddDocState extends State<AddDoc> {
                             icon: const FaIcon(FontAwesomeIcons.bagShopping),
                             label: const Text('Save'),
                             style: ElevatedButton.styleFrom(
-                                backgroundColor:
-                                    const Color.fromARGB(255, 47, 46, 65),
-                                fixedSize: const Size(double.infinity, 46)),
+                              primary: buttonColor,
+                              fixedSize: const Size(double.infinity, 46),
+                            ),
                           ),
                         ),
                         const SizedBox(

@@ -3,6 +3,7 @@ import 'package:clipboard/clipboard.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:prega/colors.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 class Share extends StatefulWidget {
@@ -117,7 +118,7 @@ class _ShareState extends State<Share> {
                 });
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 47, 46, 65),
+                primary: buttonColor,
               ),
               child: const Text("Get Link"),
             ),
