@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:prega/pages/home.dart';
+import 'package:prega/utils/size_config.dart';
 
 class SplashScreen extends StatefulWidget {
-
-
   const SplashScreen({Key? key}) : super(key: key);
 
   @override
@@ -44,6 +43,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return (Scaffold(
         backgroundColor: Colors.white,
         body: Column(
