@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:prega/colors.dart';
 import '../widgets/tags.dart';
 
 class EditProfile extends StatefulWidget {
@@ -346,9 +347,9 @@ class _EditProfileState extends State<EditProfile> {
                             Navigator.pop(context);
                           },
                           style: ElevatedButton.styleFrom(
-                              backgroundColor:
-                                  const Color.fromARGB(255, 47, 46, 65),
-                              fixedSize: const Size(double.infinity, 46)),
+                            primary: buttonColor,
+                            fixedSize: const Size(double.infinity, 46),
+                          ),
                           child: const Text(
                             "Save",
                             style: TextStyle(fontSize: 18),

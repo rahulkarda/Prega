@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:prega/colors.dart';
 import 'package:prega/pages/edit_profile.dart';
 import 'package:prega/pages/share.dart';
 import 'package:prega/provider/google_signin.dart';
@@ -73,8 +74,7 @@ class Profile extends StatelessWidget {
                           );
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor:
-                              const Color.fromARGB(255, 47, 46, 65),
+                          primary: buttonColor,
                         ),
                         child: const Text("Edit"),
                       ),
@@ -303,9 +303,9 @@ class Profile extends StatelessWidget {
                                 );
                               },
                               style: ElevatedButton.styleFrom(
-                                  backgroundColor:
-                                      const Color.fromARGB(255, 47, 46, 65),
-                                  fixedSize: const Size(double.infinity, 46)),
+                                primary: buttonColor,
+                                fixedSize: const Size(double.infinity, 46),
+                              ),
                               child: const Text(
                                 "Share to doctors",
                                 style: TextStyle(fontSize: 18),
@@ -328,9 +328,9 @@ class Profile extends StatelessWidget {
                                 provider.logout();
                               },
                               style: ElevatedButton.styleFrom(
-                                  backgroundColor:
-                                      const Color.fromARGB(255, 185, 32, 32),
-                                  fixedSize: const Size(double.infinity, 46)),
+                                primary: const Color.fromARGB(255, 185, 32, 32),
+                                fixedSize: const Size(double.infinity, 46),
+                              ),
                               child: const Text(
                                 "Logout",
                                 style: TextStyle(fontSize: 18),
