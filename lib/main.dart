@@ -9,11 +9,11 @@ import 'package:provider/provider.dart';
 
 Future main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: [
     SystemUiOverlay.bottom, //This line is used for showing the bottom bar
   ]);
 
-  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -28,7 +28,6 @@ class MyApp extends StatelessWidget {
           home: const SplashScreen(),
           theme: ThemeData(
             primarySwatch: Colors.deepPurple,
-            // textTheme: GoogleFonts.poppinsTextTheme()),
           ),
         )),
       );
